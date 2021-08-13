@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>The Beltline 50k</h1>
+<p>October 16th (weather permitting)</p>
+<p>8AM - 8PM</p>
+
+<div class="marquee">
+    <pre> 🏃‍♀️     🏃🏃‍♀️  🏃🏃‍♀️    🏃🏃‍♀️  </pre>
+    <pre>      🏃    🏃‍♀️🏃    🏃‍♀️  🏃 </pre>
+    <pre>    🏃    🏃‍♀️🏃‍♀️    🏃  🏃 </pre>
+    <pre>      🏃‍♀️   🏃‍♀️🏃         🏃‍♀️  🏃 </pre>
+</div>
+
+
+<p>Come join the first annual unoffical Beltline Ultra. </p>
+<p>BYO everything.</p>
+
+    <style style="text/css">
+        .marquee {
+            height: 50px;
+            overflow: hidden;
+            position: relative;
+            background: #fefefe;
+            color: #333;
+        }
+        
+        .marquee pre {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            line-height: 50px;
+            text-align: center;
+            -moz-transform: translateX(100%);
+            -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+            -moz-animation: scroll-left 2s linear infinite;
+            -webkit-animation: scroll-left 2s linear infinite;
+            animation: scroll-left 20s linear infinite;
+        }
+        
+        @-moz-keyframes scroll-left {
+            0% {
+                -moz-transform: translateX(100%);
+            }
+            100% {
+                -moz-transform: translateX(-100%);
+            }
+        }
+        
+        @-webkit-keyframes scroll-left {
+            0% {
+                -webkit-transform: translateX(100%);
+            }
+            100% {
+                -webkit-transform: translateX(-100%);
+            }
+        }
+        
+        @keyframes scroll-left {
+            0% {
+                -moz-transform: translateX(100%);
+                -webkit-transform: translateX(100%);
+                transform: translateX(100%);
+            }
+            100% {
+                -moz-transform: translateX(-100%);
+                -webkit-transform: translateX(-100%);
+                transform: translateX(-100%);
+            }
+        }
+    </style>
+</body>
+
+</html>
